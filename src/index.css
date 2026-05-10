@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-primary {
+  @apply px-4 py-2 bg-primary text-white rounded-lg hover:opacity-90 transition disabled:opacity-50 font-medium inline-block text-center cursor-pointer;
+}
+
+.btn-primary:hover {
+  @apply shadow-lg;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-secondary text-white rounded-lg hover:opacity-90 transition disabled:opacity-50 font-medium inline-block text-center cursor-pointer;
+}
+
+.btn-secondary:hover {
+  @apply shadow-lg;
+}
+
+.btn-outline {
+  @apply px-4 py-2 border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition disabled:opacity-50 font-medium inline-block text-center cursor-pointer;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition;
+}
+
+.input-field {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20 disabled:bg-gray-100 disabled:cursor-not-allowed transition;
+}
+
+.input-field:focus {
+  @apply border-primary ring-2 ring-primary ring-opacity-20;
+}
+
+.badge-lost {
+  @apply px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-700;
+}
+
+.badge-found {
+  @apply px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-700;
+}
+
+.badge-active {
+  @apply px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-700;
+}
+
+.badge-claimed {
+  @apply px-3 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-700;
+}
+
+.badge-pending {
+  @apply px-3 py-1 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-700;
+}
+
+.badge-accepted {
+  @apply px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-700;
+}
+
+.badge-rejected {
+  @apply px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-red-700;
+}
+
+.alert-success {
+  @apply bg-green-100 border-l-4 border-green-700 text-green-700 px-4 py-3 rounded-lg mb-4;
+}
+
+.alert-error {
+  @apply bg-red-100 border-l-4 border-red-700 text-red-700 px-4 py-3 rounded-lg mb-4;
+}
+
+.alert-warning {
+  @apply bg-yellow-100 border-l-4 border-yellow-700 text-yellow-700 px-4 py-3 rounded-lg mb-4;
+}
+
+.alert-info {
+  @apply bg-blue-100 border-l-4 border-blue-700 text-blue-700 px-4 py-3 rounded-lg mb-4;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.truncate-text {
+  @apply truncate;
+}
+
+.group-hover\:opacity-80:hover {
+  @apply opacity-80;
+}
+
+body {
+  @apply bg-accent;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+table {
+  @apply w-full border-collapse;
+}
+
+thead {
+  @apply bg-gray-100;
+}
+
+th,
+td {
+  @apply px-6 py-3 text-left border-b border-gray-300;
+}
+
+tr:hover {
+  @apply bg-gray-50;
+}
+
+nav {
+  @apply bg-primary text-white shadow-lg;
+}
+
+nav a {
+  @apply text-white hover:text-accent transition;
+}
+
+footer {
+  @apply bg-primary text-white text-center py-6 mt-12;
+}
+
+.loading-spinner {
+  @apply inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-primary;
+}
