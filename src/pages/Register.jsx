@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
-import api from '../services/api';
+import api from '../services/Api';
 import './Auth.css';
 
 const Register = () => {
